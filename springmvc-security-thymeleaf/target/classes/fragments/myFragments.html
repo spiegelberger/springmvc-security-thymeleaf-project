@@ -1,0 +1,26 @@
+<div th:fragment="topNavbar(currentLocation)">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-success px-5 mx-2 mt-2 mb-4">
+  <a class="navbar-brand h2 col-4" href="#">Our Company</a>
+
+
+	 <div class=" navbar-collapse" id="navbarNav">
+
+	 <span class="navbar-text h5" th:insert="${currentLocation}">
+     	my Location
+    </span>
+
+ 
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Contact us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+</div>

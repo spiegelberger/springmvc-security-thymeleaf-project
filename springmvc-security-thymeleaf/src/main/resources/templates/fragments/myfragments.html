@@ -1,0 +1,47 @@
+ 
+  <div th:fragment="topNavbar(currentLocation)">
+
+<nav class="navbar navbar-expand-sm navbar-light bg-success mb-4 mt-2 mx-2 px-5">
+
+  <a class="navbar-brand col-4 h1" href="#">Company name</a>
+ 
+  <div class=" navbar-collapse" id="navbarNav">
+  
+  <span class="navbar-text active h4" th:insert="${currentLocation}">
+      Navbar text with an inline element
+    </span>
+    
+    <ul class="navbar-nav ml-auto mt-2  ">
+    
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Contact us<span class="sr-only">(current)</span></a>
+      </li>
+ 
+   </ul>
+   
+    
+     </div>
+  
+  
+</nav>
+
+</div>
+
+<div th:fragment ="enough">
+
+<p class="h5"> Conditional Thymeleaf message: <br>
+The company has enough employees (at least 8 needed) </p>
+
+</div>
+
+
+
+<div th:fragment ="notEnough">
+
+<p class="h5"> Conditional Thymeleaf message: <br>
+The company doesn't have enough employees (at least 8 needed) </p>
+
+</div>
